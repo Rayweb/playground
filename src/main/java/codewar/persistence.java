@@ -1,4 +1,4 @@
-package snippets;
+package codewar;
 
 public final class persistence {
     public static void main(String[] args) {

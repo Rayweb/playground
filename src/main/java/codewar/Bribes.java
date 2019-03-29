@@ -1,4 +1,4 @@
-package snippets;
+package codewar;
 
 public class Bribes {
 

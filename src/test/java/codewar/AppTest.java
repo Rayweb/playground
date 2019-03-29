@@ -1,4 +1,4 @@
-package snippets;
+package codewar;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package snippets;
+package codewar;
 public class PrintTest {
     public static void main(String[] args) {
       //  new PrintTest().printIt(null);

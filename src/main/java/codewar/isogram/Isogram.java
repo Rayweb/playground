@@ -1,4 +1,4 @@
-package snippets;
+package codewar.isogram;
 
 import java.util.HashSet;
 import java.util.Set;
