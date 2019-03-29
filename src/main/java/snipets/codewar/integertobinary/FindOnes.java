@@ -1,9 +1,17 @@
-package codewar;
+package snipets.codewar.integertobinary;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FindOnesX{
+public class FindOnes {
+
+    public static int countBits(int n){
+        String binaryRepresentation = Integer.toString(n,2);
+        System.out.println(binaryRepresentation);
+        long count = binaryRepresentation.chars().filter(ch -> ch == '1').count();
+        return (int)count;
+    }
+
     public static int byBitShift(int n){
         int countOfBits = 0;
         do{
@@ -23,20 +31,21 @@ public class FindOnesX{
         }
         return count;
     }
- 
+
     public static int byFor(String n) {
-		char someChar = '1';
-		int count = 0;
-		for (int i = 0; i < n.length(); i++) {
-		    if (n.charAt(i) == someChar) {
-		        count++;
-		    }
-		}
-		return count;
+        char someChar = '1';
+        int count = 0;
+        for (int i = 0; i < n.length(); i++) {
+            if (n.charAt(i) == someChar) {
+                count++;
+            }
+        }
+        return count;
     }
-    
+
     public static int byLambda(String n) {
-		long count = n.chars().filter(ch -> ch == '1').count();
-		return (int) count;
+        long count = n.chars().filter(ch -> ch == '1').count();
+        return (int) count;
     }
+
 }
