@@ -1,6 +1,7 @@
 package snippets;
 
 public final class App {
+  
     public static void main(String[] args) {
         boolean result = isValid(new char[] {'n','s','n','s','n','s','n','s','n','s'});
         System.out.println(result);

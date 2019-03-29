@@ -1,5 +1,7 @@
 package snippets;
-public final class binary {
+
+public final class Binary {
+
     public static void main(String[] args) {
         int bits = countBits(1234);
         System.out.println(bits);
