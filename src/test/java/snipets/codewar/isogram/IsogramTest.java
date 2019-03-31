@@ -1,15 +1,19 @@
-package snipets.codewar;
+package snipets.codewar.isogram;
 
-import org.junit.Test;
-import snipets.codewar.isogram.Isogram;
-import snipets.codewar.isogram.IsogramRay;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-public class IsogramTests {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+@DisplayName("Isogram")
+class IsogramTest {
 
 	@Test
-	public void IsogramTestRay() {
+    /*TODO implement custom annotation for @test like @TestByAuthor("AuthorName") that gives
+    ouput as below ("Author name as author")
+    */
+    @DisplayName("Ray as author")
+	void rayTest() {
 		Isogram isogram = new IsogramRay();
 		assertEquals(true, isogram.isIsogram("Dermatoglyphics"));
 		assertEquals(true, isogram.isIsogram("isogram"));
